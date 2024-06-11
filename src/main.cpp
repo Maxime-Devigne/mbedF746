@@ -89,14 +89,10 @@ int main() {
         if (detection_active)
         {
         // put your main code here, to run repeatedly:
-        
-
         capteur.readAmbientLight(ambiant);
         capteur.readRedLight(red);
         capteur.readGreenLight(green);
         capteur.readBlueLight(blue); 
-
-        printf("R: %d ; G: %d ; B: %d ; A: %d\n", red, green, blue, ambiant);
 
         // Mise à jour valeurs R;G;B;A
         sprintf(affichageRGB, "R: %d ; G: %d ; B: %d ; A: %d", (red/4), (green/4), (blue/4), (ambiant/4));
